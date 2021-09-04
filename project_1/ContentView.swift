@@ -18,7 +18,12 @@ struct ContentView: View {
                 }
             SecondTab()
                 .tabItem {
-                    Image(systemName: "2.circle.fill")
+                Image(systemName: "2.circle.fill")
+                    .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
+            }
+            ThirdTab()
+                .tabItem {
+                    Image(systemName: "3.circle.fill")
                         .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
                 }
         }.accentColor(Color(.systemTeal))

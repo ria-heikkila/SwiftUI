@@ -8,15 +8,24 @@
 import SwiftUI
 
 struct SecondTab: View {
+    
     var body: some View {
-        ZStack {
-            Color(.systemTeal)
-                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            Text("This is second tab!")
-                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                .foregroundColor(Color.white)
+        NavigationView{
+            Content()
         }
+    }
+}
+
+struct Content: View {
+    
+    @State var title = "Items"
+    
+    var body: some View {
+        List(1..<20) { index in
+            NavigationLink(destination: Text("View number \(index)")) {
+                Text("Item \(index)")
+            }
+        }.navigationBarTitle(Text(title))
     }
 }
 

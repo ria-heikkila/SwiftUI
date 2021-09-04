@@ -10,7 +10,7 @@ import SwiftUI
 struct FirstTab: View {
     var body: some View {
         ZStack {
-            Color(.systemGray2)
+            Color(.systemTeal)
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             Text("This is first tab!")
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
