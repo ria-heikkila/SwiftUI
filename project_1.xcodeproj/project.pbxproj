@@ -11,6 +11,8 @@
 		BC5FB6DF26E36A710010CBAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5FB6DE26E36A710010CBAB /* ContentView.swift */; };
 		BC5FB6E126E36A740010CBAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5FB6E026E36A740010CBAB /* Assets.xcassets */; };
 		BC5FB6E426E36A740010CBAB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5FB6E326E36A740010CBAB /* Preview Assets.xcassets */; };
+		BC5FB6F126E372D60010CBAB /* FirstTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5FB6F026E372D60010CBAB /* FirstTab.swift */; };
+		BC5FB6F426E3731B0010CBAB /* SecondTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5FB6F326E3731B0010CBAB /* SecondTab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		BC5FB6E026E36A740010CBAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC5FB6E326E36A740010CBAB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC5FB6E526E36A740010CBAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC5FB6F026E372D60010CBAB /* FirstTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTab.swift; sourceTree = "<group>"; };
+		BC5FB6F326E3731B0010CBAB /* SecondTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				BC5FB6E026E36A740010CBAB /* Assets.xcassets */,
 				BC5FB6E526E36A740010CBAB /* Info.plist */,
 				BC5FB6E226E36A740010CBAB /* Preview Content */,
+				BC5FB6F026E372D60010CBAB /* FirstTab.swift */,
+				BC5FB6F326E3731B0010CBAB /* SecondTab.swift */,
 			);
 			path = project_1;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC5FB6F126E372D60010CBAB /* FirstTab.swift in Sources */,
+				BC5FB6F426E3731B0010CBAB /* SecondTab.swift in Sources */,
 				BC5FB6DF26E36A710010CBAB /* ContentView.swift in Sources */,
 				BC5FB6DD26E36A710010CBAB /* project_1App.swift in Sources */,
 			);
