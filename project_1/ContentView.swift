@@ -8,25 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var isNavigate: Bool = false
+    @State private var tabSelection = 1
+    
     var body: some View {
-        TabView{
-            FirstTab()
+        TabView(selection: $tabSelection){
+            FirstTab(tabSelection: $tabSelection, isNavigate: $isNavigate)
                 .tabItem {
                     Image(systemName: "1.circle.fill")
                         .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
                     
-                }
-            SecondTab()
+            }
+            .tag(1)
+            SecondTab(isNavigate: $isNavigate)
                 .tabItem {
                 Image(systemName: "2.circle.fill")
                     .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
             }
+            .tag(2)
             ThirdTab()
                 .tabItem {
                     Image(systemName: "3.circle.fill")
                         .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
-                }
-        }.accentColor(Color(.systemTeal))
+            }
+            .tag(3)
+        }
+        .accentColor(Color(.systemTeal))
     }
 }
 

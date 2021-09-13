@@ -9,8 +9,7 @@ import SwiftUI
 
 struct ThirdTab: View {
     
-    @State var btnText = "Жми сюда!"
-    @State var url = "https://fuckingswiftui.com/"
+    var url = "https://fuckingswiftui.com/"
     @State var isPresented: Bool = false
     
     var body: some View {
@@ -19,14 +18,13 @@ struct ThirdTab: View {
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             VStack {
                 Message()
-                Button(action: {
-                    self.isPresented.toggle()
-                }, label: {
-                    Text(btnText)
-                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(.white)
-            })
+                HStack {
+                    Button(action: {
+                        self.isPresented.toggle()
+                    }, label: {
+                        ThirdTabBtn()
+                    })
+                }
             }
             .sheet(isPresented: $isPresented, content: {
                 let model = WebViewModel(stringUrl: url)
@@ -36,8 +34,26 @@ struct ThirdTab: View {
     }
 }
 
+struct ThirdTabBtn: View {
+    var btnText = "Tap here"
+    
+    var body: some View{
+        HStack {
+            Text(btnText)
+                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                .foregroundColor(.white)
+            
+            Image(systemName: "hand.tap.fill")
+                .resizable()
+                .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .foregroundColor(.white)
+        }
+    }
+}
+
 struct Message: View {
-    @State var text = "Хочешь увидеть любимый сайт Ексея??"
+    private var text = "Хочешь увидеть любимый сайт Ексея??"
     
     var body: some View {
         Text(text)

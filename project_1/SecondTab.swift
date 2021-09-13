@@ -9,28 +9,55 @@ import SwiftUI
 
 struct SecondTab: View {
     
+    @Binding var isNavigate: Bool
+    var title = "Items"
+    
     var body: some View {
         NavigationView{
-            Content()
+            List{
+                NavigationLink(
+                    destination: Text("Item 1"),
+                    isActive: $isNavigate,
+                    label: {
+                        Text("Item 1")
+                    })
+                NavigationLink(
+                    destination: Text("Item 2"),
+                    label: {
+                        Text("Item 2")
+                    })
+                NavigationLink(
+                    destination: Text("Item 3"),
+                    label: {
+                        Text("Item 3")
+                    })
+            }.navigationBarTitle(Text(title))
         }
     }
 }
 
-struct Content: View {
-    
-    @State var title = "Items"
-    
-    var body: some View {
-        List(1..<20) { index in
-            NavigationLink(destination: Text("View number \(index)")) {
-                Text("Item \(index)")
-            }
-        }.navigationBarTitle(Text(title))
-    }
-}
-
-struct SecondTab_Previews: PreviewProvider {
-    static var previews: some View {
-        SecondTab()
-    }
-}
+//struct SecondTabView: View {
+//    @Binding var isNavigate: Bool
+//    var title = "Items"
+//
+//    var body: some View {
+//        List{
+//            NavigationLink(
+//                destination: Text("Item 1"),
+//                isActive: $isNavigate,
+//                label: {
+//                    Text("Item 1")
+//                })
+//            NavigationLink(
+//                destination: Text("Item 2"),
+//                label: {
+//                    Text("Item 2")
+//                })
+//            NavigationLink(
+//                destination: Text("Item 3"),
+//                label: {
+//                    Text("Item 3")
+//                })
+//        }.navigationBarTitle(Text(title))
+//    }
+//}

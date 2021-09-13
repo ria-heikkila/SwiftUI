@@ -11,11 +11,11 @@
 		BC5FB6DF26E36A710010CBAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5FB6DE26E36A710010CBAB /* ContentView.swift */; };
 		BC5FB6E126E36A740010CBAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5FB6E026E36A740010CBAB /* Assets.xcassets */; };
 		BC5FB6E426E36A740010CBAB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5FB6E326E36A740010CBAB /* Preview Assets.xcassets */; };
-		BC5FB6F126E372D60010CBAB /* FirstTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5FB6F026E372D60010CBAB /* FirstTab.swift */; };
 		BC5FB6F426E3731B0010CBAB /* SecondTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5FB6F326E3731B0010CBAB /* SecondTab.swift */; };
 		BC5FB6F726E377FC0010CBAB /* ThirdTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5FB6F626E377FC0010CBAB /* ThirdTab.swift */; };
 		BC5FB6FA26E383780010CBAB /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5FB6F926E383780010CBAB /* WebViewModel.swift */; };
 		BC5FB70126E3853C0010CBAB /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5FB70026E3853C0010CBAB /* WebView.swift */; };
+		BCC12B6526EF391A00B563D1 /* FirstTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC12B6426EF391A00B563D1 /* FirstTab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,11 +25,11 @@
 		BC5FB6E026E36A740010CBAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC5FB6E326E36A740010CBAB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC5FB6E526E36A740010CBAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC5FB6F026E372D60010CBAB /* FirstTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTab.swift; sourceTree = "<group>"; };
 		BC5FB6F326E3731B0010CBAB /* SecondTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTab.swift; sourceTree = "<group>"; };
 		BC5FB6F626E377FC0010CBAB /* ThirdTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTab.swift; sourceTree = "<group>"; };
 		BC5FB6F926E383780010CBAB /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
 		BC5FB70026E3853C0010CBAB /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		BCC12B6426EF391A00B563D1 /* FirstTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +67,11 @@
 				BC5FB6E026E36A740010CBAB /* Assets.xcassets */,
 				BC5FB6E526E36A740010CBAB /* Info.plist */,
 				BC5FB6E226E36A740010CBAB /* Preview Content */,
-				BC5FB6F026E372D60010CBAB /* FirstTab.swift */,
 				BC5FB6F326E3731B0010CBAB /* SecondTab.swift */,
 				BC5FB6F626E377FC0010CBAB /* ThirdTab.swift */,
 				BC5FB6F926E383780010CBAB /* WebViewModel.swift */,
 				BC5FB70026E3853C0010CBAB /* WebView.swift */,
+				BCC12B6426EF391A00B563D1 /* FirstTab.swift */,
 			);
 			path = project_1;
 			sourceTree = "<group>";
@@ -154,8 +154,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC5FB6F726E377FC0010CBAB /* ThirdTab.swift in Sources */,
+				BCC12B6526EF391A00B563D1 /* FirstTab.swift in Sources */,
 				BC5FB6FA26E383780010CBAB /* WebViewModel.swift in Sources */,
-				BC5FB6F126E372D60010CBAB /* FirstTab.swift in Sources */,
 				BC5FB6F426E3731B0010CBAB /* SecondTab.swift in Sources */,
 				BC5FB6DF26E36A710010CBAB /* ContentView.swift in Sources */,
 				BC5FB6DD26E36A710010CBAB /* project_1App.swift in Sources */,
